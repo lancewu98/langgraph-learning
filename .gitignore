@@ -1,0 +1,13 @@
+# 环境变量
+.env
+
+# Python
+__pycache__/
+*.pyc
+
+# 虚拟环境
+.venv/
+venv/
+
+# IDE
+.idea/
