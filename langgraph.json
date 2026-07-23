@@ -1,12 +1,12 @@
 {
-  "python_version": "3.8+",
+  "python_version": "3.11",
   "graphs": {
-    "simple": "./src/test1_simple.py",
-    "conditional": "./src/test2_if.py",
-    "loop": "./src/test3_for.py",
-    "model": "./src/test4_model.py",
-    "memory": "./src/test5_memory.py",
-    "stream": "./src/test6_streamOutput.py"
+    "simple": "./src/test1_simple.py:graph",
+    "conditional": "./src/test2_if.py:graph",
+    "loop": "./src/test3_for.py:graph",
+    "model": "./src/test4_model.py:graph",
+    "memory": "./src/test5_memory.py:graph",
+    "stream": "./src/test6_streamOutput.py:graph"
   },
   "env": "./.env",
   "dependencies": [

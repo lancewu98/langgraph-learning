@@ -4,7 +4,7 @@ from pydantic import BaseModel, Field
 from typing import Annotated, Sequence
 from langgraph.graph.message import add_messages
 from langchain_core.messages import BaseMessage
-from test4_model import llm_node,create_llm
+from src.test4_model import llm_node,create_llm
 
 class AgentState(BaseModel):
     messages: Annotated[Sequence[BaseMessage], add_messages] = Field(default_factory=list)

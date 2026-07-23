@@ -4,7 +4,7 @@ from typing import Annotated, Sequence
 from langgraph.graph.message import add_messages
 from langchain_core.messages import BaseMessage
 from langgraph.checkpoint.memory import MemorySaver
-from test4_model import llm_node
+from src.test4_model import llm_node
 
 class AgentState(BaseModel):
     messages: Annotated[Sequence[BaseMessage], add_messages] = Field(default_factory=list)
