@@ -1,0 +1,15 @@
+{
+  "python_version": "3.8+",
+  "graphs": {
+    "simple": "./src/test1_simple.py",
+    "conditional": "./src/test2_if.py",
+    "loop": "./src/test3_for.py",
+    "model": "./src/test4_model.py",
+    "memory": "./src/test5_memory.py",
+    "stream": "./src/test6_streamOutput.py"
+  },
+  "env": "./.env",
+  "dependencies": [
+    "./requirements.txt"
+  ]
+}
