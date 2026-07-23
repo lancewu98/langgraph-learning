@@ -25,6 +25,8 @@ builder.add_edge("node1", "node2")
 builder.add_edge("node2", END)
 
 graph = builder.compile()
-state = State(mes="Hello")
-result = graph.invoke(state)
-print(result)
+
+if __name__ == "__main__":
+    state = State(mes="Hello")
+    result = graph.invoke(state)
+    print(result)

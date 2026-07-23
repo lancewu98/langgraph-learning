@@ -24,10 +24,12 @@ builder.add_conditional_edges("increment", isBreak, {
 })
 
 graph = builder.compile()
-graph.get_graph().draw_mermaid_png(output_file_path="graph.png")
-result = graph.invoke(LoopState())
-print(result)
-print(loopcount)
+
+if __name__ == "__main__":
+    graph.get_graph().draw_mermaid_png(output_file_path="graph.png")
+    result = graph.invoke(LoopState())
+    print(result)
+    print(loopcount)
 
 
 

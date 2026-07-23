@@ -36,14 +36,15 @@ builder.add_edge("handleOdd", END)
 
 graph = builder.compile()
 
-# 保存流程图到文件
-try:
-    graph.get_graph().draw_mermaid_png(output_file_path="graph.png")
-    print("流程图已保存为 graph.png")
-except Exception as e:
-    print(f"保存流程图时出错: {e}")
-    print("提示: 可能需要安装 graphviz，请运行: brew install graphviz")
+if __name__ == "__main__":
+    # 保存流程图到文件
+    try:
+        graph.get_graph().draw_mermaid_png(output_file_path="graph.png")
+        print("流程图已保存为 graph.png")
+    except Exception as e:
+        print(f"保存流程图时出错: {e}")
+        print("提示: 可能需要安装 graphviz，请运行: brew install graphviz")
 
-num_input = input("请输入一个数字：")
-result = graph.invoke(State(num=int(num_input)))
-print(result)
+    num_input = input("请输入一个数字：")
+    result = graph.invoke(State(num=int(num_input)))
+    print(result)
